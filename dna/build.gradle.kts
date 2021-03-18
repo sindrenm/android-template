@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-  compileSdkVersion(30)
+  compileSdkVersion(BuildValues.compileSdkVersion)
 
   defaultConfig {
-    minSdkVersion(23)
-    targetSdkVersion(30)
+    minSdkVersion(BuildValues.minSdkVersion)
+    targetSdkVersion(BuildValues.targetSdkVersion)
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
@@ -26,44 +26,43 @@ android {
 
 dependencies {
   // Activity
-  implementation("androidx.activity:activity-ktx:1.3.0-alpha04")
-  implementation("androidx.activity:activity-compose:1.3.0-alpha04")
+  implementation(Libs.Jetpack.Activity.activity)
+  implementation(Libs.Jetpack.Activity.compose)
 
   // Jetpack – Appcompat
-  implementation("androidx.appcompat:appcompat:1.3.0-beta01")
+  implementation(Libs.Jetpack.Appcompat.appcompat)
 
   // Jetpack – Compose
-  implementation("androidx.compose.animation:animation:1.0.0-beta02")
-  implementation("androidx.compose.foundation:foundation:1.0.0-beta02")
-  implementation("androidx.compose.material:material:1.0.0-beta02")
-  implementation("androidx.compose.material:material-icons-core:1.0.0-beta02")
-  implementation("androidx.compose.material:material-icons-extended:1.0.0-beta02")
-  implementation("androidx.compose.runtime:runtime:1.0.0-beta02")
-  implementation("androidx.compose.ui:ui-test:1.0.0-beta02")
-  implementation("androidx.compose.ui:ui-tooling:1.0.0-beta02")
-  implementation("androidx.compose.ui:ui:1.0.0-beta02")
+  implementation(Libs.Jetpack.Compose.Animation.animation)
+  implementation(Libs.Jetpack.Compose.Foundation.foundation)
+  implementation(Libs.Jetpack.Compose.Material.material)
+  implementation(Libs.Jetpack.Compose.Material.iconsCore)
+  implementation(Libs.Jetpack.Compose.Material.iconsExtended)
+  implementation(Libs.Jetpack.Compose.Runtime.runtime)
+  implementation(Libs.Jetpack.Compose.Ui.tooling)
+  implementation(Libs.Jetpack.Compose.Ui.ui)
 
-  androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.0.0-beta02")
+  androidTestImplementation(Libs.Jetpack.Compose.Ui.test)
 
   // Jetpack – Fragment
-  implementation("androidx.fragment:fragment-ktx:1.3.1")
+  implementation(Libs.Jetpack.Fragment.fragment)
 
   // Jetpack – Test
-  androidTestImplementation("androidx.test:core-ktx:1.3.0")
-  androidTestImplementation("androidx.test:rules:1.3.0")
-  androidTestImplementation("androidx.test:runner:1.3.0")
+  androidTestImplementation(Libs.Jetpack.Test.core)
+  androidTestImplementation(Libs.Jetpack.Test.rules)
+  androidTestImplementation(Libs.Jetpack.Test.runner)
 
   // Jetpack – Test – Espresso
-  androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
+  androidTestImplementation(Libs.Jetpack.Test.Espresso.core)
 
   // JUnit 4
-  testImplementation("junit:junit:4.12")
+  testImplementation(Libs.JUnit.junit4)
 
-  androidTestImplementation("junit:junit:4.12")
+  androidTestImplementation(Libs.JUnit.junit4)
 
   // Kotlin
-  implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.30")
+  implementation(Libs.Kotlin.stdLib)
 
   // Material Design Components
-  implementation("com.google.android.material:material:1.4.0-alpha01")
+  implementation(Libs.Google.materialDesignComponents)
 }
