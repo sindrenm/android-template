@@ -1,27 +1,20 @@
 plugins {
   id("com.android.library")
 
-  id("kotlin-android")
+  kotlin("android")
 }
 
 android {
-  compileSdkVersion 30
+  compileSdkVersion(30)
 
   defaultConfig {
-    minSdkVersion 23
+    minSdkVersion(23)
 
-    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
 
   buildFeatures {
     compose = true
-  }
-
-  buildTypes {
-    release {
-      minifyEnabled false
-      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-    }
   }
 
   packagingOptions {

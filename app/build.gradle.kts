@@ -1,21 +1,22 @@
 plugins {
   id("com.android.application")
 
-  id("kotlin-android")
+  kotlin("android")
 }
 
 android {
-  compileSdkVersion 30
-  buildToolsVersion "30.0.3"
+  compileSdkVersion(30)
 
   defaultConfig {
-    applicationId "dev.sindrenm.template"
-    minSdkVersion 23
-    targetSdkVersion 30
-    versionCode 1
-    versionName "0.1.0"
+    applicationId = "dev.sindrenm.template"
 
-    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    minSdkVersion(23)
+    targetSdkVersion(30)
+
+    versionCode = 1
+    versionName = "0.1.0"
+
+    testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
 
   buildFeatures {
@@ -23,9 +24,9 @@ android {
   }
 
   buildTypes {
-    release {
-      minifyEnabled false
-      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    named("release") {
+      isMinifyEnabled = false
+      proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
     }
   }
 
