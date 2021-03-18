@@ -70,6 +70,11 @@ dependencies {
   // Jetpack – Test – Espresso
   androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
 
+  // JUnit 4
+  testImplementation("junit:junit:4.12")
+
+  androidTestImplementation("junit:junit:4.12")
+
   // Kotlin
   implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.31")
 
