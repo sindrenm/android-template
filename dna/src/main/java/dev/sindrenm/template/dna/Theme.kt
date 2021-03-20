@@ -37,16 +37,20 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.google.accompanist.insets.ProvideWindowInsets
+import com.google.accompanist.insets.systemBarsPadding
 import kotlinx.coroutines.launch
 
 @Composable
 fun AppTheme(isDarkMode: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-  MaterialTheme(
-    colors = if (isDarkMode) appDarkColors else appLightColors,
-    typography = appTypography,
-    shapes = appShapes,
-    content = content,
-  )
+  ProvideWindowInsets {
+    MaterialTheme(
+      colors = if (isDarkMode) appDarkColors else appLightColors,
+      typography = appTypography,
+      shapes = appShapes,
+      content = content,
+    )
+  }
 }
 
 @Preview(name = "Theme in Light Mode")
@@ -74,7 +78,9 @@ private fun PreviewContent() {
   var isNotificationsEnabled by remember { mutableStateOf(true) }
 
   Scaffold(
-    modifier = Modifier.fillMaxSize(),
+    modifier = Modifier
+      .systemBarsPadding()
+      .fillMaxSize(),
     scaffoldState = scaffoldState,
     topBar = {
       TopAppBar(
