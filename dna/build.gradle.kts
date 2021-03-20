@@ -18,6 +18,11 @@ android {
     compose = true
   }
 
+  lint {
+    disable("ObsoleteLintCustomCheck")
+    warning("ConvertToWebp")
+  }
+
   packagingOptions {
     resources.excludes.add("META-INF/AL2.0")
     resources.excludes.add("META-INF/LGPL2.1")
