@@ -44,7 +44,10 @@ android {
 }
 
 dependencies {
-  // Activity
+  // Accompanist
+  implementation(Libs.Accompanist.insets)
+
+  // Jetpack – Activity
   implementation(Libs.Jetpack.Activity.activity)
   implementation(Libs.Jetpack.Activity.compose)
 

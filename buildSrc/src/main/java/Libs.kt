@@ -3,6 +3,12 @@ object Libs {
     const val dna = ":dna"
   }
 
+  object Accompanist {
+    private const val version = "0.6.2"
+
+    const val insets = "com.google.accompanist:accompanist-insets:$version"
+  }
+
   object Android {
     const val gradlePlugin = "com.android.tools.build:gradle:7.0.0-alpha10"
   }
