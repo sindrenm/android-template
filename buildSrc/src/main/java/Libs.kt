@@ -76,4 +76,10 @@ object Libs {
     const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
     const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$version"
   }
+
+  object Spotless {
+    const val version = "5.7.0"
+
+    const val plugin = "com.diffplug.spotless"
+  }
 }

@@ -19,6 +19,5 @@ class MainActivity : AppCompatActivity() {
 @Composable
 fun MainScreen() {
   MaterialTheme {
-
   }
 }
