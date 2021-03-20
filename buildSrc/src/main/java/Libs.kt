@@ -39,7 +39,7 @@ object Libs {
       }
 
       object Ui {
-        const val test = "androidx.compose.ui:ui-test:$version"
+        const val test = "androidx.compose.ui:ui-test-junit4:$version"
         const val tooling = "androidx.compose.ui:ui-tooling:$version"
         const val ui = "androidx.compose.ui:ui:$version"
       }
