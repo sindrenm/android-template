@@ -20,6 +20,15 @@ android {
     compose = true
   }
 
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+
+  kotlinOptions {
+    jvmTarget = "1.8"
+  }
+
   lint {
     htmlOutput = File("$buildDir/reports/lint/lint-results.html")
     xmlOutput = File("$buildDir/reports/lint/lint-results.xml")
