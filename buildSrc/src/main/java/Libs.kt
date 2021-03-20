@@ -66,8 +66,17 @@ object Libs {
     }
   }
 
-  object JUnit {
+  object JUnit4 {
     const val junit4 = "junit:junit:4.12"
+  }
+
+  object JUnit5 {
+    private const val version = "5.7.1"
+
+    const val gradlePlugin = "de.mannodermaus.gradle.plugins:android-junit5:1.7.1.1"
+
+    const val jupiterApi = "org.junit.jupiter:junit-jupiter-api:$version"
+    const val jupiterEngine = "org.junit.jupiter:junit-jupiter-engine:$version"
   }
 
   object Kotlin {

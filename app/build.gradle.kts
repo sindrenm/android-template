@@ -2,6 +2,8 @@ plugins {
   id("com.android.application")
 
   kotlin("android")
+
+  id("de.mannodermaus.android-junit5")
 }
 
 android {
@@ -78,9 +80,11 @@ dependencies {
   androidTestImplementation(Libs.Jetpack.Test.Espresso.core)
 
   // JUnit 4
-  testImplementation(Libs.JUnit.junit4)
+  androidTestImplementation(Libs.JUnit4.junit4)
 
-  androidTestImplementation(Libs.JUnit.junit4)
+  // JUnit 5
+  testImplementation(Libs.JUnit5.jupiterApi)
+  testRuntimeOnly(Libs.JUnit5.jupiterEngine)
 
   // Kotlin
   implementation(Libs.Kotlin.stdLib)
