@@ -20,13 +20,13 @@ jobs:
           java-version: 11
 
       - name: Build debug APK
-        run: ./gradlew --stacktrace assembleDebug
+        run: ./gradlew --stacktrace :app:assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
           name: build-outputs
-          path: app/build/outputs
+          path: app/build/outputs/apk
 
   lint:
     runs-on: ubuntu-latest
