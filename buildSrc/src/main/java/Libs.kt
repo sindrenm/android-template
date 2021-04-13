@@ -4,27 +4,29 @@ object Libs {
   }
 
   object Accompanist {
-    private const val version = "0.6.2"
+    private const val version = "0.7.1"
 
     const val insets = "com.google.accompanist:accompanist-insets:$version"
   }
 
   object Android {
-    const val gradlePlugin = "com.android.tools.build:gradle:7.0.0-alpha10"
+    const val gradlePlugin = "com.android.tools.build:gradle:7.0.0-alpha14"
   }
 
   object Google {
-    const val materialDesignComponents = "com.google.android.material:material:1.4.0-alpha01"
+    const val materialDesignComponents = "com.google.android.material:material:1.4.0-alpha02"
   }
 
   object Jetpack {
     object Activity {
-      const val activity = "androidx.activity:activity-ktx:1.3.0-alpha04"
-      const val compose = "androidx.activity:activity-compose:1.3.0-alpha04"
+      private const val version = "1.3.0-alpha06"
+
+      const val activity = "androidx.activity:activity-ktx:$version"
+      const val compose = "androidx.activity:activity-compose:$version"
     }
 
     object Compose {
-      private const val version = "1.0.0-beta02"
+      private const val version = "1.0.0-beta04"
 
       object Animation {
         const val animation = "androidx.compose.animation:animation:$version"
@@ -52,7 +54,7 @@ object Libs {
     }
 
     object Fragment {
-      const val fragment = "androidx.fragment:fragment-ktx:1.3.1"
+      const val fragment = "androidx.fragment:fragment-ktx:1.3.2"
     }
 
     object Test {
@@ -68,12 +70,12 @@ object Libs {
     }
 
     object Appcompat {
-      const val appcompat = "androidx.appcompat:appcompat:1.3.0-beta01"
+      const val appcompat = "androidx.appcompat:appcompat:1.3.0-rc01"
     }
   }
 
   object JUnit4 {
-    const val junit4 = "junit:junit:4.12"
+    const val junit4 = "junit:junit:4.13.2"
   }
 
   object JUnit5 {
@@ -86,14 +88,14 @@ object Libs {
   }
 
   object Kotlin {
-    private const val version = "1.4.30"
+    private const val version = "1.4.31"
 
     const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
     const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$version"
   }
 
   object Spotless {
-    const val version = "5.7.0"
+    const val version = "5.12.1"
 
     const val plugin = "com.diffplug.spotless"
   }
