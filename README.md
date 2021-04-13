@@ -20,7 +20,6 @@ app's name, etc. These things will be named with the word “template” (in the
 | What                     | Template repo value         |
 | :----------------------- | :-------------------------- |
 | Application ID           | dev.sindrenm.template.app   |
-| Theme                    | Theme.Template              |
 | Application name         | Android App Template        |
 | Gradle root project name | android-template            |
 | …                        | …                           |
