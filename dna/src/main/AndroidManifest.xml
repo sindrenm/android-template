@@ -3,6 +3,6 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   package="dev.sindrenm.template.dna">
 
-  <application android:theme="@style/Theme.Template" />
+  <application android:theme="@style/Theme.App" />
 
 </manifest>

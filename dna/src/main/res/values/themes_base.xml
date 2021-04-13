@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <style name="Base.Theme.Template" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+  <style name="Base.Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
     <item name="android:statusBarColor">@android:color/transparent</item>
     <item name="android:navigationBarColor">@android:color/transparent</item>
     <item name="android:windowLightStatusBar">@bool/is_light_theme</item>
