@@ -10,6 +10,7 @@ buildscript {
 
   dependencies {
     classpath(Libs.Android.gradlePlugin)
+    classpath(Libs.Dagger.Hilt.gradlePlugin)
     classpath(Libs.Kotlin.gradlePlugin)
     classpath(Libs.JUnit5.gradlePlugin)
   }
