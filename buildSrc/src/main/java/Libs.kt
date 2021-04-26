@@ -13,6 +13,21 @@ object Libs {
     const val gradlePlugin = "com.android.tools.build:gradle:7.0.0-alpha14"
   }
 
+  object Dagger {
+    private const val version = "2.34"
+
+    const val compiler = "com.google.dagger:dagger-compiler:$version"
+    const val dagger = "com.google.dagger:dagger-compiler:$version"
+
+    object Hilt {
+      private const val version = "${Dagger.version}-beta"
+
+      const val android = "com.google.dagger:hilt-android:$version"
+      const val compiler = "com.google.dagger:hilt-compiler:$version"
+      const val gradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:$version"
+    }
+  }
+
   object Google {
     const val materialDesignComponents = "com.google.android.material:material:1.4.0-alpha02"
   }
@@ -51,6 +66,10 @@ object Libs {
         const val tooling = "androidx.compose.ui:ui-tooling:$version"
         const val ui = "androidx.compose.ui:ui:$version"
       }
+    }
+
+    object Hilt {
+      const val viewModel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
     }
 
     object Fragment {
@@ -92,6 +111,15 @@ object Libs {
 
     const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
     const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$version"
+  }
+
+  object KotlinX {
+    object Coroutines {
+      private const val version = "1.4.2"
+
+      const val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version"
+      const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
+    }
   }
 
   object Spotless {

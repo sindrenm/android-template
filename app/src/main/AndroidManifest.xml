@@ -4,6 +4,7 @@
   package="dev.sindrenm.template.app">
 
   <application
+    android:name=".main.App"
     android:allowBackup="false"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"

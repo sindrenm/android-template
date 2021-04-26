@@ -2,8 +2,10 @@ plugins {
   id("com.android.application")
 
   kotlin("android")
+  kotlin("kapt")
 
   id("de.mannodermaus.android-junit5")
+  id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -61,6 +63,14 @@ dependencies {
   // Accompanist
   implementation(Libs.Accompanist.insets)
 
+  // Dagger
+  kapt(Libs.Dagger.compiler)
+  implementation(Libs.Dagger.dagger)
+
+  // Dagger – Hilt
+  implementation(Libs.Dagger.Hilt.android)
+  kapt(Libs.Dagger.Hilt.compiler)
+
   // Jetpack – Activity
   implementation(Libs.Jetpack.Activity.activity)
   implementation(Libs.Jetpack.Activity.compose)
@@ -83,6 +93,9 @@ dependencies {
   // Jetpack – Fragment
   implementation(Libs.Jetpack.Fragment.fragment)
 
+  // Jetpack – Hilt
+  implementation(Libs.Jetpack.Hilt.viewModel)
+
   // Jetpack – Test
   androidTestImplementation(Libs.Jetpack.Test.core)
   androidTestImplementation(Libs.Jetpack.Test.rules)
@@ -100,6 +113,10 @@ dependencies {
 
   // Kotlin
   implementation(Libs.Kotlin.stdLib)
+
+  // Kotlinx – Coroutines
+  implementation(Libs.KotlinX.Coroutines.android)
+  implementation(Libs.KotlinX.Coroutines.core)
 
   // Material Design Components
   implementation(Libs.Google.materialDesignComponents)
