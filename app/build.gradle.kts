@@ -114,6 +114,10 @@ dependencies {
   // Kotlin
   implementation(Libs.Kotlin.stdLib)
 
+  // Kotlinx – Coroutines
+  implementation(Libs.KotlinX.Coroutines.android)
+  implementation(Libs.KotlinX.Coroutines.core)
+
   // Material Design Components
   implementation(Libs.Google.materialDesignComponents)
 }

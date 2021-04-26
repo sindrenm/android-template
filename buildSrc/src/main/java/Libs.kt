@@ -113,6 +113,15 @@ object Libs {
     const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$version"
   }
 
+  object KotlinX {
+    object Coroutines {
+      private const val version = "1.4.2"
+
+      const val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version"
+      const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
+    }
+  }
+
   object Spotless {
     const val version = "5.12.1"
 
