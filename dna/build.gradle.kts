@@ -33,7 +33,7 @@ android {
     htmlOutput = File("$buildDir/reports/lint/lint-results.html")
     xmlOutput = File("$buildDir/reports/lint/lint-results.xml")
 
-    disable("ObsoleteLintCustomCheck")
+    disable("DialogFragmentCallbacksDetector", "ObsoleteLintCustomCheck")
     warning("ConvertToWebp")
   }
 
