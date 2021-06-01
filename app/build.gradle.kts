@@ -9,13 +9,13 @@ plugins {
 }
 
 android {
-  compileSdkVersion(BuildValues.compileSdkVersion)
+  compileSdk = BuildValues.compileSdkVersion
 
   defaultConfig {
     applicationId = "dev.sindrenm.template"
 
-    minSdkVersion(BuildValues.minSdkVersion)
-    targetSdkVersion(BuildValues.targetSdkVersion)
+    minSdk = BuildValues.minSdkVersion
+    targetSdk = BuildValues.targetSdkVersion
 
     versionCode = 1
     versionName = "0.1.0"
@@ -47,7 +47,7 @@ android {
     htmlOutput = File("$buildDir/reports/lint/lint-results.html")
     xmlOutput = File("$buildDir/reports/lint/lint-results.xml")
 
-    disable("ObsoleteLintCustomCheck")
+    disable("DialogFragmentCallbacksDetector", "ObsoleteLintCustomCheck")
     warning("ConvertToWebp")
   }
 

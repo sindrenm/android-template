@@ -32,13 +32,13 @@ allprojects {
       target("**/*.kt")
       targetExclude("$buildDir/**/*.kt")
 
-      ktlint("0.40.0").userData(kotlinUserData)
+      ktlint("0.41.0").userData(kotlinUserData)
     }
 
     kotlinGradle {
       target("**/*.kts")
 
-      ktlint("0.40.0").userData(kotlinUserData)
+      ktlint("0.41.0").userData(kotlinUserData)
     }
   }
 }

@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-  compileSdkVersion(BuildValues.compileSdkVersion)
+  compileSdk = BuildValues.compileSdkVersion
 
   defaultConfig {
-    minSdkVersion(BuildValues.minSdkVersion)
-    targetSdkVersion(BuildValues.targetSdkVersion)
+    minSdk = BuildValues.minSdkVersion
+    targetSdk = BuildValues.targetSdkVersion
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
@@ -33,7 +33,7 @@ android {
     htmlOutput = File("$buildDir/reports/lint/lint-results.html")
     xmlOutput = File("$buildDir/reports/lint/lint-results.xml")
 
-    disable("ObsoleteLintCustomCheck")
+    disable("DialogFragmentCallbacksDetector", "ObsoleteLintCustomCheck")
     warning("ConvertToWebp")
   }
 
