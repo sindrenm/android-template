@@ -9,13 +9,13 @@ plugins {
 }
 
 android {
-  compileSdkVersion(BuildValues.compileSdkVersion)
+  compileSdk = BuildValues.compileSdkVersion
 
   defaultConfig {
     applicationId = "dev.sindrenm.template"
 
-    minSdkVersion(BuildValues.minSdkVersion)
-    targetSdkVersion(BuildValues.targetSdkVersion)
+    minSdk = BuildValues.minSdkVersion
+    targetSdk = BuildValues.targetSdkVersion
 
     versionCode = 1
     versionName = "0.1.0"
